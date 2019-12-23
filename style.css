@@ -1,0 +1,37 @@
+.bell {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 50px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 6px solid cadetblue;
+    color: cadetblue;
+    text-align: center;
+    line-height: 80px;
+    transition: .2s;
+}
+
+.bell:hover {
+    background-color: cadetblue;
+
+}
+
+.bell i:hover {
+    cursor: pointer;
+    animation: rotate .3s linear infinite alternate;
+    transform-origin: 50% 0;
+    color: white;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(35deg);
+    }
+
+    100% {
+        transform: rotate(-35deg);
+    }
+}
